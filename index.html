@@ -1,287 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c57cc500-de48-4154-8711-dd6dca53bde9"></script>
 
-    <script defer src="https://cloud.umami.is/script.js" data-website-id="c57cc500-de48-4154-8711-dd6dca53bde9"></script>
-    
-    <!-- Primary Meta Tags -->
-    <title>Lee Elkin | The University of Hong Kong</title>
-    <meta name="title" content="Lee Elkin | Philosopher">
-    <meta name="description" content="Personal page of Lee Elkin. Assistant Lecturer of Philosophy, The University of Hong Kong.">
-    <meta name="author" content="Lee Elkin">
+<!-- Primary Meta Tags -->
+<title>Lee Elkin | The University of Hong Kong</title>
+<meta name="description" content="Personal page of Lee Elkin. Assistant Lecturer of Philosophy, The University of Hong Kong.">
+<meta name="author" content="Lee Elkin">
+<link rel="canonical" href="https://www.lelkin.com/">
 
-    <!-- Open Graph / SEO -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ljelkin.github.io/">
-    <meta property="og:title" content="Lee Elkin | Assistant Lecturer | The University of Hong Kong">
-    <meta property="og:description" content="Assistant Lecturer of Philosophy at HKU.">
-    <meta property="twitter:card" content="summary_large_image">
+<!-- Open Graph / SEO -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.lelkin.com/">
+<meta property="og:title" content="Lee Elkin | Assistant Lecturer | The University of Hong Kong">
+<meta property="og:description" content="Assistant Lecturer of Philosophy at HKU.">
+<meta name="twitter:card" content="summary">
 
-    <!-- Security: CSP (Restricts scripts and allows Google Fonts) -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cloud.umami.is; connect-src 'self' https://*.umami.is https://*.umami.dev; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:;">
+<!-- Security: CSP (no external CSS/fonts needed, so those sources are dropped) -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cloud.umami.is; connect-src 'self' https://*.umami.is https://*.umami.dev; style-src 'self' 'unsafe-inline'; img-src 'self' data:; object-src 'none'; base-uri 'none'; form-action 'none'">
 
+<!-- Zero-file Favicon (Inline SVG) -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23262b35%22/><text x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22sans-serif%22 font-size=%2260%22 font-weight=%22bold%22>L</text></svg>">
 
-    <!-- Zero-file Favicon (Inline SVG) -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23262b35%22/><text x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22sans-serif%22 font-size=%2260%22 font-weight=%22bold%22>L</text></svg>">
+<style>
+:root{
+  --paper:#F8F9F4;
+  --ink:#171C24;
+  --ink-soft:#535C63;
+  --ink-faint:#656E75;
+  --violet:#544A9B;
+  --rule:#BCC1B4;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
+  --sans:ui-sans-serif,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;
+  --mono:ui-monospace,"SF Mono","Cascadia Mono","Roboto Mono",Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root{--paper:#1E242B;--ink:#E5E8E1;--ink-soft:#A9B1B6;
+  --ink-faint:#8D959B;--violet:#A79CF0;--rule:#333A41;}
+}
+*{box-sizing:border-box}
+a{color:inherit;text-decoration:underline;text-decoration-color:var(--rule);
+  text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{color:var(--violet);text-decoration-color:var(--violet)}
+a:focus-visible{outline:2px solid var(--violet);outline-offset:3px;border-radius:2px}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--sans);font-size:16px;line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500&family=Outfit:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+.page{max-width:1000px;margin:0 auto;padding:clamp(2rem,6vw,5.5rem) clamp(1.25rem,5vw,3rem)}
+@media (min-width:940px){
+  .page{display:grid;grid-template-columns:16.5rem 1fr;gap:5rem;align-items:start}
+  .rail{position:sticky;top:5.5rem}
+}
 
-    <style>
-        :root {
-            --bg: #28292a;
-            --card-bg: #2f3031;
-            --card-hover: #323334;
-            --text-main: #ffffff;
-            --accent: #fff3d1;
-            --border: rgba(230, 224, 204, 0.075);
-        }
+.name{font-family:var(--serif);font-weight:400;font-size:clamp(2.4rem,5.5vw,3rem);
+  line-height:1.02;letter-spacing:-.02em;margin:0}
+.role{font-family:var(--mono);font-size:.72rem;text-transform:uppercase;
+  letter-spacing:.13em;color:var(--ink-soft);margin:1rem 0 0;line-height:1.8}
 
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+.label{font-family:var(--mono);font-size:.72rem;font-weight:400;text-transform:lowercase;
+  letter-spacing:.1em;color:var(--ink-faint);margin:0 0 1.1rem}
+.label::before{content:"[ ";color:var(--violet)}
+.label::after{content:" ]";color:var(--violet)}
+.rail .label{margin:0 0 .7rem}
 
-        body {
-            background-color: var(--bg);
-            color: var(--text-main);
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            line-height: 1.6;
-            -webkit-font-smoothing: antialiased;
-            min-height: 100vh;
-        }
+.block{margin:2.4rem 0 0}
+.degrees{margin:0;display:grid;gap:.5rem;font-size:.95rem}
+.degrees div{display:flex;gap:.7rem;align-items:baseline}
+.degrees dt{font-family:var(--mono);font-size:.76rem;color:var(--violet);min-width:2.3rem}
+.degrees dd{margin:0}
+.reach{font-family:var(--mono);font-size:.82rem;line-height:2;color:var(--ink-soft);
+  word-break:break-word}
 
-        .container {
-            max-width: 950px;
-            margin: 0 auto;
-            padding: 50px 24px;
-        }
+main{margin:3.6rem 0 0;min-width:0}
+@media (min-width:940px){main{margin:0}}
+section{margin:0 0 3.6rem}
+.about p{font-family:var(--serif);font-size:1rem;line-height:1.7;
+  max-width:33em;margin:0 0 .85rem}
+.about p:last-child{margin:0}
+p{max-width:34em}
 
-        header { margin-bottom: 10px; }
+.grp{margin:0 0 2.6rem}
+.grp:last-child{margin:0}
+.grp-label{font-family:var(--mono);font-size:.66rem;font-weight:600;
+  text-transform:uppercase;letter-spacing:.16em;color:var(--ink);margin:0 0 .9rem}
 
-        h1 {
-            font-family: 'Outfit', sans-serif;
-            font-size: clamp(2.5rem, 8vw, 3.5rem);
-            font-weight: 600; 
-            letter-spacing: -0.04em;
-            color: var(--text-main);
-        }
+.works{list-style:none;margin:0;padding:0 0 0 clamp(1rem,3vw,1.6rem);
+  position:relative;border-left:1px solid var(--rule)}
+.works::before,.works::after{content:"";position:absolute;left:-1px;width:.7rem;
+  height:1px;background:var(--violet)}
+.works::before{top:0}
+.works::after{bottom:0}
+.works li{padding:0 0 1.5rem}
+.works li:last-child{padding-bottom:0}
+.yr{font-family:var(--mono);font-size:.74rem;color:var(--ink-faint);
+  display:block;margin:0 0 .15rem}
+.ti{font-family:var(--serif);font-size:1.09rem;line-height:1.4;display:block;max-width:34em}
+.bk{font-style:italic}
+.venue{color:var(--ink-soft);font-size:.9rem;margin:.2rem 0 0;max-width:38em}
+.venue em{font-family:var(--serif);font-size:1.02em}
 
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 16px;
-        }
+.foot{font-family:var(--mono);font-size:.68rem;color:var(--ink-faint);
+  margin:0;padding:1.4rem 0 0;border-top:1px solid var(--rule)}
 
-        .card {
-            background: var(--card-bg);
-            border: 1px solid var(--border);
-            border-radius: 6px;
-            padding: 30px;
-            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.14);
-        }
-
-        .card:hover {
-            border-color: rgba(230, 224, 204, 0.12);
-            background: var(--card-hover);
-            transform: translateY(-1px);
-        }
-
-        .span-4 { grid-column: span 4; }
-        .span-2 { grid-column: span 2; }
-        .span-6 { grid-column: span 6; }
-
-        h3 {
-            font-family: 'Outfit', sans-serif;
-            font-size: 0.7rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.15em;
-            color: var(--text-main);
-            margin-bottom: 20px;
-        }
-
-        .bio-lead { font-size: 1.1rem; font-weight: 400; margin-bottom: 12px; color: #fff; }
-        .bio-sub { color: var(--text-main); font-size: 0.95rem; margin-bottom: 12px; }
-
-        .data-section { margin-bottom: 24px; }
-        .data-section:last-child { margin-bottom: 0; }
-
-        .data-row {
-            display: grid;
-            grid-template-columns: 52px minmax(0, 1fr);
-            gap: 12px;
-            font-family: 'Inter', sans-serif;
-            font-size: 0.85rem;
-            padding: 6px 0;
-            border-bottom: 1px solid rgba(230, 224, 204, 0.05);
-        }
-        .data-row:last-child { border-bottom: none; }
-        .data-label { color: var(--text-main); font-size: 0.7rem; font-weight: 600; text-transform: uppercase; }
-        .data-value { color: var(--text-main); text-align: left; white-space: nowrap; }
-
-        .pub-list { list-style: none; }
-        .pub-item {
-            padding: 16px 0;
-            border-bottom: 1px solid var(--border);
-            display: flex;
-            gap: 24px;
-            align-items: baseline;
-        }
-        .pub-item:last-child { border-bottom: none; }
-        
-        .pub-year { 
-            font-family: 'Inter', sans-serif; 
-            font-size: 0.8rem; 
-            color: var(--text-main);
-            flex: 0 0 80px; 
-            font-weight: 500;
-        }
-        .pub-text { font-size: 1rem; color: var(--text-main); flex: 1; }
-
-        a { color: var(--text-main); text-decoration: none; transition: 0.2s; }
-        .pub-text a { color: var(--accent); }
-        a:hover { color: var(--accent); text-decoration: underline; }
-
-        footer {
-            margin-top: 80px;
-            padding-top: 24px;
-            border-top: 1px solid var(--border);
-            color: var(--text-main);
-            font-family: 'Inter', sans-serif;
-            font-size: 0.65rem;
-            letter-spacing: 0.1em;
-        }
-
-        @media (max-width: 800px) {
-            .grid { grid-template-columns: 1fr; }
-            .span-4, .span-2, .span-6 { grid-column: span 1; }
-            .pub-item { flex-direction: column; gap: 4px; }
-            .pub-year { flex: none; width: auto; }
-        }
-    </style>
+@media print{
+  body{background:#fff;color:#000;font-size:11pt}
+  a{color:#000;text-decoration:none}
+  .page{display:block;max-width:none;padding:0}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
 </head>
 <body>
 
-    <div class="container">
-        <header>
-            <h1>Lee Elkin</h1>
-        </header>
+<div class="page">
+  <header class="rail">
+    <h1 class="name">Lee<br>Elkin</h1>
+    <p class="role">Assistant Lecturer<br>The University of Hong Kong</p>
 
-        <main class="grid">
-            <div class="card span-4">
-                <h3>About</h3>
-                <p class="bio-lead">Assistant Lecturer, The University of Hong Kong</p>
-                <p class="bio-sub">I'm a philosopher with research interests in AI, decision theory, epistemology, ethics, and the philosophy of cognitive science.</p>
-                <p class="bio-sub">Before joining HKU, I held postdoctoral positions at The Alan Turing Institute, Erasmus University Rotterdam, Jagiellonian University, and the University of Paris.</p>
-            </div>
-
-            <div class="card span-2">
-                <div class="data-section">
-                    <h3>Education</h3>
-                    <div class="data-row">
-                        <span class="data-label">PhD</span>
-                        <span class="data-value">MCMP, LMU Munich</span>
-                    </div>
-                    <div class="data-row">
-                        <span class="data-label">MA</span>
-                        <span class="data-value">University of Calgary</span>
-                    </div>
-                    <div class="data-row">
-                        <span class="data-label">BA</span>
-                        <span class="data-value">University of Pittsburgh</span>
-                    </div>
-                </div>
-
-                <div class="data-section" style="margin-top: 30px;">
-                    <h3>Get in Touch</h3>
-                    <div class="data-row">
-                        <span class="data-label">X</span>
-                        <a href="https://x.com/Lee_J_Elkin" target="_blank" rel="noopener noreferrer">@Lee_J_Elkin</a>
-                    </div>
-                    <div class="data-row">
-                        <span class="data-label">Email</span>
-                        <a href="mailto:ljelkin3@gmail.com">ljelkin3@gmail.com</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card span-6">
-                <h3>Publications</h3>
-                <ul class="pub-list">
-                    <li class="pub-item">
-                        <span class="pub-year">forthcoming</span>
-                        <p class="pub-text">
-                            <a href="https://philpapers.org/archive/STEDIF.pdf" target="_blank" rel="noopener noreferrer">Diving Into Fair Pools: Algorithmic Fairness, Ensemble Forecasting, and The Wisdom of Crowds</a>. 
-                            <em>Analysis</em>. (with Rush Stewart)
-                        </p>
-                    </li>
-                    <li class="pub-item">
-                        <span class="pub-year">2025</span>
-                        <p class="pub-text">
-                            <a href="https://www.cambridge.org/core/elements/opinion-pooling/40647AA21F276CF80F67398058682294" target="_blank" rel="noopener noreferrer"><em>Opinion Pooling</em></a>. 
-                            Cambridge University Press. (with Richard Pettigrew)
-                        </p>
-                    </li>
-                    <li class="pub-item">
-                        <span class="pub-year">2024</span>
-                        <p class="pub-text">
-                            <a href="https://link.springer.com/article/10.1007/s11229-024-04644-6" target="_blank" rel="noopener noreferrer">Normative Uncertainty Meets Voting Theory</a>. 
-                            <em>Synthese, 203,</em> 191-205.
-                        </p>
-                    </li>
-                    <li class="pub-item">
-                        <span class="pub-year">2023</span>
-                        <p class="pub-text">
-                            <a href="https://link.springer.com/article/10.1007/s10670-021-00457-y" target="_blank" rel="noopener noreferrer">The Precautionary Principle and Expert Disagreement</a>. 
-                            <em>Erkenntnis, 88,</em> 2717-2726.
-                        </p>
-                    </li>
-                    <li class="pub-item">
-                        <span class="pub-year">2022</span>
-                        <p class="pub-text">
-                            <a href="https://www.jneurophilosophy.com/index.php/jnp/article/view/8/19" target="_blank" rel="noopener noreferrer">Too Rational: How Predictive Coding’s Success Risks Harming The Mentally Disordered and Ill</a>. 
-                            <em>Journal of NeuroPhilosophy 1,</em> 41-48. (with Karolina Wisńiowska)
-                        </p>
-                    </li>
-                    <li class="pub-item">
-                        <span class="pub-year">2021</span>
-                        <p class="pub-text">
-                            <a href="https://journals.publishing.umich.edu/ergo/article/id/1153/" target="_blank" rel="noopener noreferrer">Regret Averse Opinion Aggregation</a>. 
-                            <em>Ergo: An Open Access Journal of Philosophy, 8,</em> 473-495.
-                        </p>
-                    </li>
-                    <li class="pub-item">
-                        <span class="pub-year">2021</span>
-                        <p class="pub-text">
-                            <a href="https://www.journals.uchicago.edu/doi/10.1093/bjps/axy059" target="_blank" rel="noopener noreferrer">Being Realist About Bayes, and The Predictive Processing Theory of Mind</a>. 
-                            <em>The British Journal for the Philosophy of Science 72,</em> 185-220. (with Matteo Colombo and Stephan Hartmann)
-                        </p>
-                    </li>
-                    <li class="pub-item">
-                        <span class="pub-year">2018</span>
-                        <p class="pub-text">
-                            <a href="https://onlinelibrary.wiley.com/doi/10.1111/nous.12143" target="_blank" rel="noopener noreferrer">Resolving Peer Disagreements Through Imprecise Probabilities</a>. 
-                            <em>Noûs 52,</em> 260-278. (with Gregory Wheeler)
-                        </p>
-                    </li>
-                    <li class="pub-item">
-                        <span class="pub-year">2015</span>
-                        <p class="pub-text">
-                            <a href="#" target="_blank" rel="noopener noreferrer">An Epistemically Modest Response to Disagreement, AGM-ified</a>. 
-                            <em>The Reasoner 9,</em> 76-77.
-                        </p>
-                    </li>
-                </ul>
-            </div>
-        </main>
-
-        <footer>
-            Lee Elkin // 2026 // The University of Hong Kong
-        </footer>
+    <div class="block">
+      <h2 class="label">education</h2>
+      <dl class="degrees">
+        <div><dt>PhD</dt><dd>MCMP, LMU Munich</dd></div>
+        <div><dt>MA</dt><dd>University of Calgary</dd></div>
+        <div><dt>BA</dt><dd>University of Pittsburgh</dd></div>
+      </dl>
     </div>
 
+    <div class="block">
+      <h2 class="label">contact</h2>
+      <p class="reach"><a href="mailto:ljelkin3@gmail.com">ljelkin3@gmail.com</a><br><a href="https://x.com/Lee_J_Elkin" rel="me">x.com/Lee_J_Elkin</a></p>
+    </div>
+  </header>
+
+  <main>
+    <section class="about">
+      <h2 class="label">about</h2>
+      <p>I'm a philosopher working on AI, decision theory, epistemology, ethics, and the philosophy of cognitive science.</p>
+      <p>Much of my research asks how to reason under disagreement and uncertainty. Specifically, how to pool the judgments of many people, or many models, into a single view, and what pragmatic commitments that view carries.</p>
+      <p>Before joining HKU, I held postdoctoral positions at The Alan Turing Institute, Erasmus University Rotterdam, Jagiellonian University, and the University of Paris.</p>
+    </section>
+
+    <section>
+      <h2 class="label">research</h2>
+      <div class="grp">
+        <h3 class="grp-label">Book</h3>
+        <ol class="works">
+          <li>
+            <span class="yr">2025</span>
+            <a class="ti bk" href="https://www.cambridge.org/core/elements/opinion-pooling/40647AA21F276CF80F67398058682294">Opinion pooling</a>
+            <p class="venue">Cambridge University Press · with Richard Pettigrew</p>
+          </li>
+        </ol>
+      </div>
+
+      <div class="grp">
+        <h3 class="grp-label">Articles</h3>
+        <ol class="works">
+          <li>
+            <span class="yr">forthcoming</span>
+            <span class="ti">Fair group opinions are imprecise</span>
+            <p class="venue"><em>Episteme</em></p>
+          </li>
+          <li>
+            <span class="yr">forthcoming</span>
+            <a class="ti" href="https://philpapers.org/archive/STEDIF.pdf">Diving into fair pools: algorithmic fairness, ensemble forecasting, and the wisdom of crowds</a>
+            <p class="venue"><em>Analysis</em> · with Rush Stewart</p>
+          </li>
+          <li>
+            <span class="yr">2024</span>
+            <a class="ti" href="https://link.springer.com/article/10.1007/s11229-024-04644-6">Normative uncertainty meets voting theory</a>
+            <p class="venue"><em>Synthese</em> 203, 191–205</p>
+          </li>
+          <li>
+            <span class="yr">2023</span>
+            <a class="ti" href="https://link.springer.com/article/10.1007/s10670-021-00457-y">The precautionary principle and expert disagreement</a>
+            <p class="venue"><em>Erkenntnis</em> 88, 2717–2726</p>
+          </li>
+          <li>
+            <span class="yr">2022</span>
+            <a class="ti" href="https://www.jneurophilosophy.com/index.php/jnp/article/view/8/19">Too rational: how predictive coding's success risks harming the mentally disordered and ill</a>
+            <p class="venue"><em>Journal of NeuroPhilosophy</em> 1, 41–48 · with Karolina Wiśniowska</p>
+          </li>
+          <li>
+            <span class="yr">2021</span>
+            <a class="ti" href="https://journals.publishing.umich.edu/ergo/article/id/1153/">Regret averse opinion aggregation</a>
+            <p class="venue"><em>Ergo</em> 8, 473–495</p>
+          </li>
+          <li>
+            <span class="yr">2021</span>
+            <a class="ti" href="https://www.journals.uchicago.edu/doi/10.1093/bjps/axy059">Being realist about Bayes, and the predictive processing theory of mind</a>
+            <p class="venue"><em>The British Journal for the Philosophy of Science</em> 72, 185–220 · with Matteo Colombo and Stephan Hartmann</p>
+          </li>
+          <li>
+            <span class="yr">2018</span>
+            <a class="ti" href="https://onlinelibrary.wiley.com/doi/10.1111/nous.12143">Resolving peer disagreements through imprecise probabilities</a>
+            <p class="venue"><em>Noûs</em> 52, 260–278 · with Gregory Wheeler</p>
+          </li>
+          <li>
+            <span class="yr">2015</span>
+            <span class="ti">An epistemically modest response to disagreement, AGM-ified</span>
+            <p class="venue"><em>The Reasoner</em> 9, 76–77</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <p class="foot">Lee Elkin · 2026 · The University of Hong Kong</p>
+  </main>
+</div>
 </body>
 </html>
